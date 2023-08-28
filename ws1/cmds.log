@@ -1,0 +1,50 @@
+    1  passwd
+    2  ls -latr
+    3  ls
+    4  ls -lat
+    5  ls 
+    6  passwd
+    7  git status
+    8  ls
+    9  cd ~/ws1
+   10  ls
+   11  git add ws1
+   12  git status
+   13  touch ws1
+   14  git add ws1
+   15  git status
+   16  rm ws1
+   17  ls
+   18  touch ws1
+   19  git add ws1
+   20  git status
+   21  cd ~
+   22  git status
+   23  cd ~/ws1
+   24  git commit -m "first commit"
+   25  git checkout -b ws1
+   26  git branch
+   27  git remote add origin https://github.com/Junwen-Zhong735/cs131.git
+   28  git branch -M main
+   29  git push -M main
+   30  git push -u origin main
+   31  git remote add origin https://github.com/Junwen-Zhong735/cs131.git
+   32  git branch -M main
+   33  git push -u origin main
+   34  git status
+   35  wget www.github.com
+   36  git origin push cs131
+   37  git push origin cs131
+   38  git push origin ws1
+   39  git branch
+   40  git branch ws1
+   41  git push origin ws1
+   42  git pull origin main
+   43  git checkout main
+   44  history > cmds.log
+   45  ls
+   46  git add cmds.log
+   47  git push origin ws1
+   48  git status
+   49  git add cmds.log
+   50  history > cmds.log
