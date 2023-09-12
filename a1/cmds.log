@@ -1,0 +1,45 @@
+question 1:
+  430  mkdir a1
+  431  cd a1
+
+question 2: 
+  432 echo $HOME
+
+question 3: 
+  433  id
+
+question 4:
+  434  mkdir temp
+  435  chmod u-x temp
+  436  cd temp
+  437  ls temp 
+  438  ls - l temp
+  439  touch temp/a
+
+question 5:
+  440  mkdir temp2
+  441  mv temp2 temp3
+  442  cp temp 3 temp 2 
+  443  cp -r temp 3 temp 2
+
+question 6: 
+  444  ls /proc/ | grep mem
+  445  ls /proc/ | grep cpu
+
+question 7:  
+  445  head /proc/iomem
+  446  head /proc/meminfo 
+
+Question 8 is located below question 10
+
+question 9: 
+  447  cat /etc/os-release
+
+question 10: 
+  448  ls -l /etc/os-release
+
+question 8:
+  459  ls /proc | grep cpu
+  460  head /proc/cpuinfo 
+  465  tail /proc/cpuinfo
+  466  cat /proc/cpuinfo
