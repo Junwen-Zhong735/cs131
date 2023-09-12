@@ -1,0 +1,9 @@
+  212  mkdir ws3
+  214  cd ws3
+  222  cp ~/taxidata/2019-01.csv 2019-01.csv
+  223  cp ~/taxidata/2019-02.csv 2019-02.csv
+  281  cut 2019-01.csv -d "," -f 8 | sort -n | uniq -c | sort -nr | head -n 3 > ws3.txt
+  282  vim ws3.txt
+  283  cut 2019-02.csv -d "," -f 8 | sort -n | uniq -c | sort -nr | head -n 3 >> ws3.txt
+  284  vim ws3.txt
+  285  history > cmds.log
