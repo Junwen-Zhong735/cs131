@@ -1,0 +1,31 @@
+
+task 1:
+  829  grep -E ".*,.*,.*2019-05-11" ~/taxidata/2019-05.csv | grep -v 2019-05-09 | grep -v 2019-05-10 > 05-11 
+  830  cut -d, -f17 05-11 > task1-1
+  831  echo $(cat task1-1 | paste -s -d+ | bc -l) / $(wc -l < task1-1) | bc -l
+
+task 2:
+  837  cut -d, -f17 05-11 | sort -nr | head -1
+
+task 3: 
+  856  cut -d, -f4,9 ~/taxidata/2019-05.csv | sort -k1 | grep -v ^[012].0, | cut -d, -f2 | sort | uniq -c | sort -nr | head -10
+ 
+task 4:  
+  874  grep -E ".*,.*,.*2019-05-20" ~/taxidata/2019-05.csv | grep -v 2019-05-19 > 05-20
+  877  cut -d, -f8 05-20 | sort | uniq -c | sort -nr | head -2
+  880  cut -d, -f8,9 05-20 | grep ^237.0 | cut -d, -f2 | sort | uniq -c | sort -nr | head -1
+  
+task 5
+  887  cut -d, -f8 ~/taxidata/2019-01.csv > pickups 
+  889  cut -d, -f8 ~/taxidata/2019-02.csv >> pickups 
+  891  cut -d, -f8 ~/taxidata/2019-03.csv >> pickups 
+  892  cut -d, -f8 ~/taxidata/2019-04.csv >> pickups 
+  893  cut -d, -f8 ~/taxidata/2019-05.csv >> pickups 
+  894  cut -d, -f8 ~/taxidata/2019-06.csv >> pickups 
+  895  cut -d, -f8 ~/taxidata/2019-07.csv >> pickups 
+  896  cut -d, -f8 ~/taxidata/2019-08.csv >> pickups 
+  897  cut -d, -f8 ~/taxidata/2019-09.csv >> pickups 
+  898  cut -d, -f8 ~/taxidata/2019-10.csv >> pickups 
+  899  cut -d, -f8 ~/taxidata/2019-11.csv >> pickups 
+  900  cut -d, -f8 ~/taxidata/2019-12.csv >> pickups 
+  901  sort pickups | uniq -c | sort -nr | head -2
