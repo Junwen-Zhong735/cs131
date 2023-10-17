@@ -1,0 +1,12 @@
+task 1:
+  914  sed -n '/^2.0/p' 2019-11.csv > vendor2.csv
+  915  head -10 vendor2.csv
+  917  wc vendor2.csv
+
+task 2: 
+  937  sed -e 's/://g' -e 's/"//g' -e 's/-//g' 2019-11.csv > no-seperators.csv
+ 1012  head -10 no-seperators.csv
+ 
+task 3:
+ 1023  sed 's/\.[0-9]*//g' no-seperators.csv > no-fractions.csv
+ 1024  head -10 no-fractions.csv
