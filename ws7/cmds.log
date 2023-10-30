@@ -1,0 +1,5 @@
+ task 1: use awk to find frequency of tips for fares of $10 or more 
+ 1077  cat 2019-12.csv | awk -F, '{ if ($11<=10) {print $14}}' | sort | uniq -c > results.txt 
+
+task 2: top 20 tip amounts 
+ 1078  sort -nr results.txt | head -20 > ws7.txt
