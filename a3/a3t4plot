@@ -1,0 +1,16 @@
+#!/usr/local/bin/gnuplot -persist
+set style fill transparent solid 0.2 noborder
+
+set datafile separator ' '
+
+set terminal svg
+set out 'a3t4.svg'
+
+set title "Travel distance and total amount paid"
+set xlabel "travel distance"
+set ylabel "total amount paid"
+NO_ANIMATION = 1
+set autoscale x
+set autoscale y
+
+plot 'a3t4.dat' using 1:2 with circles lc rgb 'red'

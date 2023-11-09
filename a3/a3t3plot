@@ -1,0 +1,19 @@
+
+set border 2 front lt black linewidth 1.000 dashtype solid
+set boxwidth 0.5 absolute
+set style fill solid 0.50
+unset key
+set pointsize 0.5
+
+set terminal svg
+set out 'box.png'
+
+set style data boxplot
+set xtics ("0" 1, "1" 2, "2" 3, "3" 4, "4" 5, "5" 6, "6" 7, "7" 8, "8" 9, "9" 10)
+set autoscale y
+
+set xlabel 'number of passengers'
+set ylabel 'tip per passenger'
+
+filenames = "0.0.dat 1.0.dat 2.0.dat 3.0.dat 4.0.dat 5.0.dat 6.0.dat 7.0.dat 8.0.dat 9.0.dat"
+plot for [i=1:words(filenames)] word(filenames,i) u (i):2 w boxplot notitle

@@ -1,0 +1,13 @@
+task 1: 
+1195  awk -f script1.awk 2019-08.csv | sort -k2 -nr | head -10 > a3.txt
+
+task 2:
+ 1210  awk -f script2.awk 2019-08.csv | sort -t "," -k2 -nr | head -1 >> a3.txt
+
+task 3: create a file for each passengerCount that holds a list of tips per passenger
+ 1225  awk -f script3.awk 2019-08.csv
+ 1226  gnuplot
+ 
+task 4: 
+ 1234  awk -f script4.awk 2019-08.csv
+ 1236  gnuplot
