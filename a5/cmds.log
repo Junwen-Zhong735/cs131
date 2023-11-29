@@ -1,0 +1,9 @@
+# sort csv file into data to be plotted
+ 1109  awk -F, 'NF==1 {next} {print $3 " " $5}' iqdata.csv |  sort -k1 -nr > iq-literacy
+ 1110  awk -F, 'NF==1 {next} {print $3 " " $6}' iqdata.csv |  sort -k1 -nr > iq-nobel
+ 1111  awk -F, 'NF==1 {next} {print $3 " " $7}' iqdata.csv |  sort -k1 -nr > iq-hdi
+ 1112  awk -F, 'NF==1 {next} {print $3 " " $8}' iqdata.csv |  sort -k1 -nr > iq-schoolyrs
+ 1113  awk -F, 'NF==1 {next} {print $3 " " $9}' iqdata.csv |  sort -k1 -nr > iq-gni
+ 1114  awk -F, 'NF==1 {next} {print $8 " " $9}' iqdata.csv |  sort -k1 -nr > schoolyrs-gni
+ 1115  awk -F, 'NF==1 {next} {print $8 " " $7}' iqdata.csv |  sort -k1 -nr > schoolyrs-hdi
+ 1116  awk -F, 'NF==1 {next} {print $7 " " $9}' iqdata.csv |  sort -k1 -nr > hdi-gni

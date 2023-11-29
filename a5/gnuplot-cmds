@@ -1,0 +1,81 @@
+# record of commands used in gnuplot
+Script started on 2023-11-29 14:00:44-05:00
+bash-4.4$ gnuplot
+
+	G N U P L O T
+	Version 5.2 patchlevel 4    last modified 2018-06-01 
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2018
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'qt'
+gnuplot> set term svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set autoscale x
+gnuplot> set autoscale y
+
+# plot 1
+gnuplot> set title 'National Average IQ Score VS National Literacy Rate'
+gnuplot> set xlabel 'National Average IQ Score'
+gnuplot> set ylabel 'National Literacy Rate'
+gnuplot> set out '~/a5/iq-literacy.svg'
+gnuplot> plot '~/a5/iq-literacy' notitle with points
+
+# plot 2
+gnuplot> set title 'National Average IQ Score VS Number of Nobel Prizes Won'
+gnuplot> set xlabel 'National Average IQ Score'
+gnuplot> set ylabel 'Number of Nobel Prize(s) Won'
+gnuplot> set out '~/a5/iq-nobel.svg'
+gnuplot> plot '~/a5/iq-nobel' notitle with points
+
+# plot 3
+gnuplot> set title "National Average IQ Score VS Country's Human Development Index"
+gnuplot> set xlabel 'National Average IQ Score'
+gnuplot> set ylabel "Country's Human Development Index"
+gnuplot> set out '~/a5/iq-hdi.svg'
+gnuplot> plot '~/a5/iq-hdi' notitle with points
+
+# plot 4
+gnuplot> set title 'National Average IQ Score VS Average Years of School per Student'
+gnuplot> set xlabel 'National Average IQ Score'
+gnuplot> set ylabel 'Average Years of School Per Student'
+gnuplot> set out '~/a5/iq-schoolyrs.svg'
+gnuplot> plot '~/a5/iq-schoolyrs' notitle with points
+
+# plot 5
+gnuplot> set title 'National Average IQ Score VS Gross National Income'
+gnuplot> set xlabel 'National Average IQ Score'
+gnuplot> set ylabel 'Gross National Income'
+gnuplot> set out '~/a5/iq-gni.svg'
+gnuplot> plot '~/a5/iq-gni' notitle with points
+
+# plot 6
+gnuplot> set title 'Average Years of School Per Student VS Gross National Income'
+gnuplot> set xlabel 'Average Years of School Per Student'
+gnuplot> set ylabel 'Gross National Income'
+gnuplot> set out '~/a5/schoolyrs-gni.svg'
+gnuplot> plot '~/a5/schoolyrs-gni' notitle with points
+
+$ plot 7
+gnuplot> set title "Average Years of School Per Student VS Country's Human Development Index"
+gnuplot> set xlabel 'Average Years of School Per Student'
+gnuplot> set ylabel "Country's Human Development Index"
+gnuplot> set out '~/a5/schoolyrs-hdi.svg'
+gnuplot> plot '~/a5/schoolyrs-hdi' notitle with points
+
+# plot 8
+gnuplot> set title "Country's Human Development Index VS Gross National Income"
+gnuplot> set xlabel "Country's Human Development Index"
+gnuplot> set ylabel 'Gross National Income'
+gnuplot> set out '~/a5/hdi-gni.svg'
+gnuplot> plot '~/a5/hdi-gni' notitle with points
+gnuplot> quit
+bash-4.4$ exit
+
+Script done on 2023-11-29 14:06:23-05:00

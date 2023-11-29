@@ -1,0 +1,12 @@
+193 entries
+columns:
+	Rank: rank by national average IQ score, range=1-193
+	Country: country name
+	Average IQ: average IQ score of country, range=42.99-106.48 
+	Continent: continent where country is located, values = Africa, Asia, Central America, Europe, Europe/Asia, North America, Oceania, or South America 
+	Literacy Rate: 1 = 100%, range=0.19-1.0
+	Nobel Prizes: number of Nobel Prizes won by people from each country, range=0-400
+	HDI (2021): Human Development Index which is based lifespan expectancy, expected years of schooling, and average income per person, range=0.385-0.962 excluding countries missing this data
+	Average years in school (2012): average number of years of school per student, range=2.1-14.1 excluding some countries missing this data
+	GNI (2021): Gross National Index, range=732-146830 excluding some countries missing this data
+	Population (2023): population of country, range=6.115-1428627663
